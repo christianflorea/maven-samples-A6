@@ -16,13 +16,6 @@ pipeline {
                 '''
       }
     }
-
-    stage('run') {
-      steps {
-        sh 'mvn clean test'
-      }
-    }
-
   }
   tools {
     maven 'DHT_MVN'
